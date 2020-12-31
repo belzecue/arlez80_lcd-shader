@@ -16,7 +16,8 @@ export(Color) var monochrome_dark:Color = Color( 0.19607843137254902, 0.22745098
 export(int, 2, 255) var steps:int = 4 setget _set_steps
 
 func _init( ):
-	self.material = preload("lcd.shader").instance( )
+	self.material = ShaderMaterial.new( )
+	self.material.shader = preload("lcd.shader")
 
 func _ready( ):
 	self.visible = true
