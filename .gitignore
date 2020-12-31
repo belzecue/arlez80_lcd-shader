@@ -1,0 +1,10 @@
+.dropbox.attr
+Thumbs.db
+.import/*
+*.import
+*/*.import
+dev/*
+ice.jpg
+project.godot
+Test.tscn
+default_env.tres
